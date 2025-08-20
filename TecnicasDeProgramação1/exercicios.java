@@ -68,10 +68,60 @@ class Exercicio6{
 }
 */
 
+/*
 class Exercicio7{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         float val = scanner.nextFloat();
-        System.out.println();     
+        float taxa = scanner.nextFloat();
+        int tempo = scanner.nextInt();
+        float pres = val + (val * (taxa/100) * tempo);
+        System.out.println(pres);     
     }
 }
+*/
+
+/*
+class Exercicio8{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        float qtDolar = scanner.nextFloat();
+        float valCotacao = scanner.nextFloat();
+        float valReal = qtDolar * valCotacao;
+        System.out.println(valReal);     
+    }
+}
+*/
+
+/*
+class Exercicio9{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = a;
+        System.out.println(a = b);
+        System.out.println(c);
+    }
+}
+*/
+
+/*
+class Exercicio10{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        float num = scanner.nextFloat();
+        System.out.println(num * num);     
+    }
+}
+*/
+
+/*
+class Exercicio11{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        float num = scanner.nextFloat();
+        System.out.println(num % 6 );     
+    }
+}
+      
