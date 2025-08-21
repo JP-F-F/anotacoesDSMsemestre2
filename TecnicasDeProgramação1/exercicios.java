@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 /*
 class Exercio1{
     public static void main(String[] args){
@@ -124,4 +124,4 @@ class Exercicio11{
         System.out.println(num % 6 );     
     }
 }
-      
+*/     
