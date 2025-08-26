@@ -1,4 +1,6 @@
+
 //import java.util.Scanner;
+
 /*
 class Exercio1{
     public static void main(String[] args){
@@ -124,4 +126,89 @@ class Exercicio11{
         System.out.println(num % 6 );     
     }
 }
-*/     
+*/
+
+// SEGUNDA LISTA DE EXERCICIOS ------------------------------------------------------
+
+/*
+class Exercicio1l2{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+        int num3 = scanner.nextInt();
+        int maior, menor, meio;
+        if(num1  > num2 && num1 > num3){
+            maior = num1;
+            if(num2 > num3){
+                meio = num2;
+                menor = num3;
+            }else{
+                meio = num3;
+                menor = num2;
+            }
+        }else if(num2 > num3 && num2 > num1){
+            maior = num2;
+            if(num1 > num3){
+                meio = num1;
+                menor = num3;
+            }
+            else{
+                meio = num3;
+                menor = num1;
+            }
+            
+        }else{
+            maior = num3;
+            if(num1 > num2){
+                meio = num1;
+                menor = num2;
+            }else{
+                meio = num2;
+                menor = num1;
+            }
+        }
+
+        System.out.println(menor);
+        System.out.println(meio);
+        System.out.println(maior);
+    }
+}
+*/
+
+/*
+class Exercicio2l2{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float nt1 = scanner.nextFloat();
+        float nt2 = scanner.nextFloat();
+        float nt3 = scanner.nextFloat();
+        float nt4 = scanner.nextFloat();
+        float md = nt1 + nt2 + nt3 + nt4 / 4;
+        if(md >= 7){
+            System.out.println("aluno aprovado" + " " + md);
+        }else{
+            System.out.println("aluno reprovado" + " " + md);
+        }
+    }
+}
+*/
+
+/*
+class Exercicio3l2{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
+        int n3 = scanner.nextInt();
+        if(n1 > n2 && n1 > n3){
+            System.out.println(n1);
+        }else if(n2 > n3){
+            System.out.println(n2);
+        }else{
+            System.out.println(n3);
+        }
+    }
+}
+*/
+
