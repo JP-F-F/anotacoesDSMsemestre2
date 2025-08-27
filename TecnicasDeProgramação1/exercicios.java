@@ -1,5 +1,5 @@
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
 /*
 class Exercio1{
@@ -212,3 +212,135 @@ class Exercicio3l2{
 }
 */
 
+/* 
+class Exercicio4l2{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
+        int n3 = scanner.nextInt();
+        int n4 = scanner.nextInt();
+        int n5 = scanner.nextInt();
+        int maior, menor;
+        
+        if(n1  > n2 && n1 > n3 && n1 > n4 && n1 > n5){
+            maior = n1;
+            if(n1 < n2 && n1 < n3 && n1 < n4 && n1 < n5){
+                menor = n1;
+            } 
+        }else if(n2 > n1 && n2 > n3 && n2 > n4 && n2 > n5){
+            maior = n2;
+            if(n2 < n1 && n2 < n3 && n2 < n4 && n2 < n5){
+                menor = n2;
+            }
+            
+        }else if(n3 > n1 && n3 > n2 && n3 > n4 && n3> n5){
+            maior = n3;
+            if(n3 < n1 && n3 < n2 && n3 < n4 && n3 < n5){
+                menor = n3;
+            }
+        }else if(n4 > n1 && n4 > n2 && n4 > n3 && n4 > n5){
+            maior = n4;
+            if(n4 < n1 && n4 < n2 && n4 < n3 && n4 < n5){
+                menor = n4;
+            }
+        }
+        else{
+            maior = n5;
+            if(n5 < n1 && n5 < n2 && n5 < n3 && n4 < n5){
+                menor = n5;
+            }
+        }
+        System.out.println("Esse é o menor numero:" + menor);
+        System.out.println("Esses é o maior número:" + maior);
+        System.out.println("Os números digitados:" + n1 + "" + n2 + "" + n3 "" + n4 + "" + n5);
+
+    }
+}
+*/
+
+/* 
+class Exercicio5l2{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        if(num % 2 == 0){
+            System.out.println("esse número é par:" + num);
+        }else{
+            System.out.println("Esse número é ímpar:" + num);
+        }
+    }
+}
+*/
+
+/* 
+class Exercicio6l2{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite o código do produto(de 100 e 105)");
+        int pedido = scanner.nextInt();
+        System.out.println("Quantidade do item");
+        int qtd = scanner.nextInt();
+
+        if(pedido < 100 || pedido > 105){
+            System.out.println("ERRO: Código Inválido");
+            
+        }else if(pedido == 100){
+            System.out.println("O total do pedido é: R$" + qtd*1.20f);
+
+        }else if(pedido == 101){
+            System.out.println("O total do pedido é: R$" + qtd*1.30f);
+
+        }else if(pedido == 102){
+            System.out.println("O total do pedido é: R$" + qtd*1.50f);
+
+        }else if(pedido == 103){
+            System.out.println("O total do pedido é: R$" + qtd*1.20f);
+
+        }else if(pedido == 104){
+            System.out.println("O total do pedido é: R$" + qtd*1.30f);
+
+        }else if(pedido == 105){
+            System.out.println("O total do pedido é: R$" + qtd*1);
+
+        }
+    }
+}
+*/
+
+/*
+class Exercicio7l2{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        int fat = 1;
+        for(int i = 2; i <= num; i++){
+            fat = fat * i;
+        }
+        System.out.println("O fatorial do número:" + num + " " + "É:" + fat);
+    }
+}
+*/
+
+/* 
+class Exercicio8l2{
+    public static void main(String[] args){
+        int soma = 0;
+        for(int i = 1; i <= 100; i++){
+            soma += i;
+        }
+        System.out.println("A soma dos primeiro cem inteiros é" + soma);
+    }
+}
+*/
+
+/* 
+class Exercicio9l2{
+    public static void main(String[] args){
+        for(int cel = 10; cel <= 100; celsius += 10){
+            float fah = (cel * 9.0 / 5.0) + 32;
+            System.out.println("celsius:" + cel + " " + "Fahrenheit:" + fah)
+        }
+    }
+}
+*/
