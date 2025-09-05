@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 /*
 class Problema1{
     public static void main(String[] args) {
@@ -89,7 +89,7 @@ class Problema4{
 }
 */
 
-class Problema5{
+/*class Problema5{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] nums = new int[10];
@@ -99,3 +99,4 @@ class Problema5{
         }
     }
 }
+*/

@@ -34,4 +34,7 @@ Também é muito útil para _reutilização de código_, pois é possível usar 
 ## Ambiente java e o garbage collection
 
 * É o responsável por alocar e liberar memória;
-* Quando uma váriavel é declarada o JVM 
+* Caso uma variável seja associada a outra região de memória, o JVM colocado o espaço anteriormente alocado em uma pilha de objetos que estão em desuso;
+* Caso o computador fique com pouca memória, o JVM remove os objetos da pilha de desuso.
+* Assim o programador não precisa se preocupar com a aritmética de ponteiros, pois o java faz isso automáticamente;
+
