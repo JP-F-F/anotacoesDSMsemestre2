@@ -9,3 +9,58 @@
 * **Software para linha de produto** - É composto por **componentes reutilizáveis**. É projetado para prover capacidades específicas de utilização por muitos clientes diferentes. Tendem a se concentrar em um **mercado hermético e limitado/lidar com consumidor em massa**.
 * **Aplicações web/aplicativos móveis** - Essa categoria voltada a redes é bem ampla, contemplando apps voltados para navegador, computação em nuvem e etc.
 * **Software de Inteligência Artificial** - Usa heurísticas para solucionar problemas complexos que **não são passíveis de computação ou análise direta**.
+
+De acordo com o IEEE [IEE17] a definição para engenharia de software seria:
+Aplicação de uma abordagem sistemática, disciplinada e quantificável no desenvolvimento/operação/manutenção de um software. Isto é a **aplicação** de ES.
+
+
+## As camadas da Engenharia de Software:
+
+A **Engenharia de software** engloba **processos, métodos e ferramentas** que possibilitam a construção de sistemas complexos, dentro do prazo e com qualidade.
+O _processo de software_ tem cinco _atividades estruturais_: **comunicaçõa, planejamento, modelagem, construção e entrega**.
+
+* **Ferramentas** - fornecem **suporte automatizado** ou semiautomatizado para os processos e para os metódos(as camdas superiores a essa). Quando integramos ferramentas e as tais geram informações que possam ser utilizadas por outras ferramentas, se estabelece um _sistema_ para o suporte ao desenvolvimento de software, chamado **Engenharia de Software com o auxílio do computador**
+
+* **Métodos** - fornecem as **informações técnicas** para desenvolver o software. Estes envolvem uma variedade de tarefas, que incluem: **comunicação, análise de requisitos, modelagem de projeto, construção de programa, testes e suporte**. Os métodos se baseiam no conjunto de princípios básicos que governam cada área da tecnologia, incluindo atividades de **modelagem e outrasd técnicas descritivas**.
+
+* **Processo** - Define uma metodologia que deve ser estabelecida para a entrega efetiva de tecnologia. O processo é a **base para o controle do gerenciamento de projetos** e estabelece o **contexto que será aplicado os métodos técnicos**, são produzidos **artefatos** e estabelecidos **marcos**.
+
+O fundamento principal da ES é a **Qualidade**. Que deve estar fundada em um **comprometimento organizacional**. A gestão da qualidade total, ou seis Sigma e filosofias similares.
+
+## O BPM(business process mangement) com a Metodologia BPMN
+
+### O que é BPMN:
+
+BPM = Um conceito que une gestão de negócios e tecnologia da informação. Se utiliza **métodos, técnicas e ferramentas** para **analisar, modelar, publicar, otimizar e controlar** processos, envolvendo RH, aplicações, documentos e outras fontes de informação.
+Essa metodologia compreende um conjunto de disciplinas focadas no **mapeamento, na otimização de processos e no design e redesign** de sistemas organizacionais e de informação.
+Essa metodologia mostra graficamente a descrição dos processos de negócios em modelos que facilitam a compreensão do funcionamento das organizações.
+A BPM pode ainda ser vista como ciência gerencial que **analisa processos de ponta  a ponta**.
+De acordo com a ABPMN, processo = junção de atividades e comportamentos executados por humanos/máquinas para alcançar resultados. 
+Um dos desafios básicos é gerenciar seus processos para entregar valor para seus clientes com o menor custo possível.
+
+#### Os processos de negócio
+
+Existem três tipos de processos de negócio, sendo eles os primários, os de apoio e os de gerenciamento.
+
+* **Processos primários** - São as atividades vitais da organização, processos que não se limitam a um setor ou departamento, podendo ligar diversos departamentos até organizações para entregar valor ao cliente. Esses processos geram uma visão completa de toda o ciclo de vida da cadeia de criação de valor.
+* **Processos de apoio** - Esses fornecem suporte aos primários. A diferença entre esses é os primários, é que os primários vão dar valor a outros processos e não aos clientes. O de apoio buscam prover uma visão especializada e funcional, auxiliando a sustentação de processos primários.
+* **Processos de Gerenciamento** - Esses processos tem como objetivo gerenciar, apontar irregularidades e manter a qualidade dos outros tipos de processo, garantindo que eles atinjam suas metas. Eles támbem indicam pontos de melhorias, finalizando o ciclo de vida de BPM.
+
+* **Nível 1 - Processos** - Representam os grandes processos da empresa, sendo chamado também de _cadeia de valor_/_Macro-processos_. EX: Vendas
+* **Nível 2 - Sub-processos** - É a decomposição de um processo nos seus componentes principais, pode ou não representar a lógica e as regras entre os sub-processos. EX: Cadastrar cliente.
+* **Nível 3 - Atividades** - É a decomposição de um sub-processo em suas principais atividades. Geralmente representamos a lógica e as regras de negócio, evitando os detalhes operacionais.
+* **Nível 4 - Tarefas** - São os passos necessários pra completar uma atividade e representam as ações operacionais detalhadas. EX: Preencher campo matrícula CPF.
+
+Quando vamos fornecer a descrição dos processos de negócio, utilizamos uma linguagem de modelagem gráfica. Dentre as diversas notações de modelagem de processos, se destaca a **Bussiness Process Modeling Notation(BPMN)**, por ser a mais utilizada.
+O **BPMN** é um padrão de linguagem comumente usado para descrever processos em BPM.
+
+**A BPMN** possui uma vários elementos básicos(evento, atividade/tarefa, artefatos, gateway e raia) usados para representar ações e determinar o comportamento de um processo.
+Descrevendo os elementos:
+
+* **Evento** - é algo que acontece durante o fluxo de um processo e causa impacto no mesmo, o que acarreta em uma ação que pode iniciar a execução de um novo processo, podendo alterar o caminho dele, seu comportamento, afetar a execução ou ainda finalizá-lo e concluí-lo.
+Existem 3 tipos de evento:
+    * iniciais - indicam o ínicio de uma nova instância do processo;
+    * intermediários - acontece entre o começo e o fim do processo;
+    * finais - indicam o término da instância de um processo;
+
+* **Atividade/tarefa** representa os passos executados em um processo, podendo ser orientados a tarefas ou decompostos em subprocessos. Atividades podem ser executadas tanto por humanos(manual) quanto por máquinas(automática);
