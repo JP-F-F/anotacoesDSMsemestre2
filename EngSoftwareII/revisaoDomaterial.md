@@ -63,4 +63,17 @@ Existem 3 tipos de evento:
     * intermediários - acontece entre o começo e o fim do processo;
     * finais - indicam o término da instância de um processo;
 
-* **Atividade/tarefa** representa os passos executados em um processo, podendo ser orientados a tarefas ou decompostos em subprocessos. Atividades podem ser executadas tanto por humanos(manual) quanto por máquinas(automática);
+* **Atividade/tarefa** - representa os passos executados em um processo, podendo ser orientados a tarefas ou decompostos em subprocessos. Atividades podem ser executadas tanto por humanos(manual) quanto por máquinas(automática);
+
+* **Artefatos** - Fornecem informações sobre o processo mas não alteram seu fluxo, complementam os diagramas com informações visuais como uma anotação no diagrama ou até como um agrupamento de componentes para realizar uma marcação visual.
+    * Objeto de dados - seu objetivo é disponibilizar informações;
+    * Depósito de dados - seu objetivo é fornecer uma estrutura de atualização de dados ou  informações relativas ao processo;
+    * Grupo - Seu objetivo é indicar o agrupamento de elementos dentro do diagrama;
+    * Anotação - Tem como objetivo de inserir informações adicionais ao diagrama.
+
+------------------- Adicionar a imagem dos icones aqui depois------------------------
+
+* **Raias** - Servem para agrupar elementos da modelagem. Elas são compostas por:
+    * Piscinas(pool) - Representam um autor em determinado processo;
+    * Pistas(lane) - Representam a subdivisão da piscina, são usadas para organizar e categorizar participantes de um processo;
+    * Marcos(milestones) - Servem pra mostrar as etapas dum processo indicando a mudança de uma fase; 
