@@ -38,3 +38,39 @@ Também é muito útil para _reutilização de código_, pois é possível usar 
 * Caso o computador fique com pouca memória, o JVM remove os objetos da pilha de desuso.
 * Assim o programador não precisa se preocupar com a aritmética de ponteiros, pois o java faz isso automáticamente;
 
+# Revisando o arquivo aula_03_TP
+
+No java strings não são um **tipo primitivo** mas sim uma ***C l a s s e***;
+
+Os caracteres scape são indicados pelo simbolo da barra invertida "\".
+---------insira aqui a imagem dos carateres scape-----------------
+
+Usamos o _for_ quando sabemos quantas iterações serão necessárias solução do problema;
+
+
+## Falando de arrays
+
+Declaração de um array multimensional:
+```java
+int[][] nums = {
+    {1,2,3}, 
+    {4,5,6}
+    };
+```
+no Java os arrays tem **tamanho fixo**, caso queiramos um array sem tamanho fixo usamos **arrayslist**
+
+usar o **foreach** para percorrer todos os elementos do array é o ideal.
+
+Os arraylist são básicamente arrays com tamanhos dinâmicos, tem seus metodos para adicionar e remover itens e etc.
+Metodos arraylist:
+```java
+array.add(); //adiciona elementos
+array.size(); //Vê o tamaho atual do arraylist
+```
+
+# Arquivo aula_04_TP
+
+lá nos anos 70 surgiu a programação estruturada que foi criada para tentar resolver os problemas da época, está seria o berço da programação orientada a objeto.
+Os **principios da programação estruturada**:
+* **Abstração** - Para resolver um problema se faz necessário que o analista o analise de forma isolada, ou seja focar detalhadamente nos detalhes desse problema.
+* **Formalidade**
