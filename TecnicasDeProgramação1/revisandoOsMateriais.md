@@ -70,7 +70,43 @@ array.size(); //Vê o tamaho atual do arraylist
 
 # Arquivo aula_04_TP
 
+## contexto/historia da POO
+
 lá nos anos 70 surgiu a programação estruturada que foi criada para tentar resolver os problemas da época, está seria o berço da programação orientada a objeto.
 Os **principios da programação estruturada**:
 * **Abstração** - Para resolver um problema se faz necessário que o analista o analise de forma isolada, ou seja focar detalhadamente nos detalhes desse problema.
-* **Formalidade**
+* **Formalidade** - O analista deve organizar os componentes para a solução do problema em uma árvore de estrutura hierárquica. Fazendo o sistema ser entendido a nível, a cada novo nível se acrescenta mais detalhes.
+
+Nos anos 60 a linguagem norueguesa ***Simula67*** introduzia conceitos de OO.
+
+Nos anos 70 o Centro de pesquisa da xerox(PARC) desenvolveu a samlltalk, a primeira linguagem 100% OO.
+
+**A POO é um paradigma de programação**. Sendo essa uma evolução do paradigma procedural.
+
+## Fundamentos e visão da POO 
+
+A enciclopedia britânica afirma:
+Geralmente se emprega esses três métodos de organização:
+* Diferenciação de objetos particulares e seus atributos;
+* Distinguir objetos como um todo e entre seus componentes;
+* Formação/distinção entre as diferentes classes de objeto;
+
+O foco do programa está nos seus **dados(objetos)**, não nas funções pois as funções _mudam mais que os dados_.
+Focando assim em compreender o mundo com objetos, pois a base da estrutura do programa se baseia em representar objetos do mundo real(**Estados + Comportamento**);
+
+## Classes e objetos
+
+Explicação - classes são abstrações de objetos do mundo real, definindo um tipo de objeto, suas ***caracteristicas(atributos)*** e suas ***ações(métodos)***, classes não tem vida, são _conceitos estáticos_ (arquivos .java no disco). **Apenas as intâncias da classe tem vida**.
+Definição - São declarações de objetos/Abstrações de objetos;
+
+**Objeto** - São uma instância de uma classe, ou seja ele possui os **comportamentos e características** definidos na classe.
+
+Objetos representam entidades do mundo real, e possuem três características:
+* Identidade;
+* Estado;
+* Comportamento;
+
+Conjunto de atributos = descrição; Conjunto de métodos = Comportamento;
+
+Objetos gerados de uma classe não são iguais, eles são apenas semelhantes em suas propriedades.
+Quando instanciamos um objeto é reservado um espaço na memória para ele e seu construtor é executado, e o objeto estara pronto para ser executado. Quando eliminamos um objeto utilizamos o seu destrutor 
