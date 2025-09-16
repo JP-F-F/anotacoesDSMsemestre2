@@ -102,11 +102,44 @@ Definição - São declarações de objetos/Abstrações de objetos;
 **Objeto** - São uma instância de uma classe, ou seja ele possui os **comportamentos e características** definidos na classe.
 
 Objetos representam entidades do mundo real, e possuem três características:
-* Identidade;
-* Estado;
-* Comportamento;
+* Identidade - Objetos são únicos e distinguiveis;
+* Estado - O estado do objeto é determinado pelos dados contidos no objeto;
+* Comportamento - O comportamento do objeto é definido pelos seus serviços/operações;
 
 Conjunto de atributos = descrição; Conjunto de métodos = Comportamento;
 
 Objetos gerados de uma classe não são iguais, eles são apenas semelhantes em suas propriedades.
-Quando instanciamos um objeto é reservado um espaço na memória para ele e seu construtor é executado, e o objeto estara pronto para ser executado. Quando eliminamos um objeto utilizamos o seu destrutor 
+Quando instanciamos um objeto é reservado um espaço na memória para ele e seu construtor é executado, e o objeto estara pronto para ser executado. Quando eliminamos um objeto utilizamos o seu _destrutor_.
+
+**Pacotes** são formas de organizar suas classes e objetos. A _convenção_ é ---> domínio - projeto + pasta
+EX: com.fatecDiadema.java.aula_04;
+
+Sempre que declararmos um objeto precisamos **instancia-lo**;
+EX: declaração(OBJ obj =) Instanciação(= new OBJ());
+
+Podemos criar **objetos anônimos**, para isso basta apenas não indicar o nome do objeto na instânciação.
+Esses objetos são utilizados qaundo a instância da classe é usada apenas uma vez;
+EX: new Classe();
+
+Objetos são representados por **um círculo com o seu nome na parte interna**.
+Os ***sinônimos*** de objeto seriam - Objeto = Instância = Ocorrência.
+
+Os objetos se comunicam atráves de _mensagens_ , quando se envia uma mensagem é necessário especificar ***Um receptor, uma requisição de serviços, argumentos/parâmetros(opicional)**;
+Se o serviço não puder ser atendido o emissor é notificado e o receptor não faz nenhum processamento.
+Caso contrário o receptor aceita e responde a mensagem ativando o método correspondente.
+Atender uma mensagem envolve esxecutar código(método) sobre algum dado daquela operação(atributo).
+
+### Metodos 
+
+_Metodos_ são operações que realizam ações e podem modificar atributos de objeto que as está executando;
+Metodos só podem retornar ***Um valor ou uma coleção***
+
+# Arquivo aula_05_TP
+
+## Encapsulamento e modificadores de acesso
+
+É o mecanismo utilizado para disponibilizar/proteger métodos, evitando o acesso direto e indevido a uma instancia, seus atributos e etc.
+
+Devemos aplicar o encapsulamento pensando no códigp que ira usar esses atributos e etc depois.
+
+Os **modificadores de acesso**
