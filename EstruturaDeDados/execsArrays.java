@@ -1,5 +1,5 @@
-import java.util.Arrays;
-import java.util.Scanner;
+//import java.util.Arrays;
+//import java.util.Scanner;
 /*
 class Ativ1{
     public static void main(String[] args) {
@@ -46,6 +46,7 @@ class Ativ2{
 }
 */
 
+/*
 class Ativ3{
     public static void main(String[] args) {
         double[] nums = new double[8];
@@ -71,3 +72,4 @@ class Ativ3{
 
     }
 }
+*/

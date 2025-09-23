@@ -30,7 +30,7 @@ class Exercicio2l3{
 //Exercicios 8
 import java.util.Scanner;
 
-public class Aluno{
+class Aluno{
     private String nome;
     private double notaTrimestre1;
     private double notaTrimestre2;
@@ -53,17 +53,28 @@ public class Aluno{
         System.out.println("Digite a nota do terceiro trimestre:");
         double nota3 = scan.nextDouble();
         System.out.println("Agora digite o nome do aluno:");
-        String nome = scan.nextLine();
-        Aluno al = new Aluno(nome, nota1, nota2, nota3);
+        String nm = scan.next();
+
+        Aluno al = new Aluno(nm, nota1, nota2, nota3);
         double calc = nota1 * 0.3 + nota2 * 0.35 + nota3 * 0.35 / 1;
         scan.close();
         return calc;
     }
 
-    public void media(double nota){
-        if(nota < 6){
-            System.out.println("O aluno não alcançou a nota minima, faltou:" + (nota-10) + "para alcançar o esperado" );
+    public static void media(double nt){
+        if(nt < 6){
+            System.out.println("O aluno não alcançou a nota minima, faltou:" + (nt-10) + " para alcançar o esperado" );
+        }else{
+            System.out.println("Aluno Alcançou a nota minima, nota do aluno:" + nt);
         }
     }
 
+}
+
+class Atividade8Al{
+    public static void main(String[] args) {
+    Aluno al = new Aluno("",0,0,0);
+    double med = al.media();
+    Aluno.media(med);
+    }
 }
