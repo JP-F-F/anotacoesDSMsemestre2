@@ -140,6 +140,23 @@ Metodos só podem retornar ***Um valor ou uma coleção***
 
 É o mecanismo utilizado para disponibilizar/proteger métodos, evitando o acesso direto e indevido a uma instancia, seus atributos e etc.
 
-Devemos aplicar o encapsulamento pensando no códigp que ira usar esses atributos e etc depois.
+Devemos aplicar o encapsulamento pensando no código que irá usar esses atributos e etc depois.
 
-Os **modificadores de acesso**
+Os **modificadores de acesso** estes controlam o acesso aos ***membros de uma classe***.
+Membros de uma classe = a própria classe, atributos, metodos, contrutores.
+Caso um atributo ou metodo não tenha nenhum modificador de acesso ele é definido como ***Friendly***, ficando somente vísivel para objetos de classes do mesmo pacote.
+
+Atributos **static** pertencem a classe não ao objeto.
+
+## coesão e acoplamento
+
+Esses dois conceitos fundamentais na POO descrevem a qualidade da estrutura do código/classes;
+
+**Coesão** = medida que os elementos de uma classe estçao relacionados e funcionam juntos para cumprir seus objetivos.
+Uma classe coesa é uma classe que, possui uma única responsabilidade e seus métodos e atributos estão relacionados a essa responsabilidade.
+
+**Acoplamento** = medida em que as classes estão interconectadas ou dependentes umas das outras.
+Um alto nível de acomplamento indica que as classes estão interconectadas ou dependentes umas das outras, o que pode tornar o código mais difícil de entender e modificar.
+
+Uma boa prática de programação é maximizar a coesão e minizar o acoplamento.
+

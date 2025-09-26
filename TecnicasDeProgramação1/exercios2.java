@@ -27,7 +27,7 @@ class Exercicio2l3{
 }
 */
 
-//Exercicios 8
+/*Exercicio 8
 import java.util.Scanner;
 
 class Aluno{
@@ -78,3 +78,4 @@ class Atividade8Al{
     Aluno.media(med);
     }
 }
+*/
