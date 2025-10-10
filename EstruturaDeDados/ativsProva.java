@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 class Questao12{
     public static void main(String[] args) {
@@ -43,3 +43,4 @@ class Questao13{
         System.out.println("A soma da diagonal principal é: " + soma);
     }
 }
+*/
