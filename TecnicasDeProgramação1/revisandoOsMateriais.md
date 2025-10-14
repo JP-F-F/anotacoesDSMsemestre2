@@ -146,6 +146,11 @@ Os **modificadores de acesso** estes controlam o acesso aos ***membros de uma cl
 Membros de uma classe = a própria classe, atributos, metodos, contrutores.
 Caso um atributo ou metodo não tenha nenhum modificador de acesso ele é definido como ***Friendly***, ficando somente vísivel para objetos de classes do mesmo pacote.
 
+O modificador ***final*** faz com que os métodos não possam redefinidos e as classes impossiveis de estender(herança).
+Atributos ***Final*** também podem ser declarados com ***static***.
+
+Atributos ***Static*** pertencem a classe não ao objeto, mesmo que ajam vários objetos, só existe uma cópia de tal atributo, caso queiramos acessar esse atributo usamos o nome da classe.
+
 Atributos **static** pertencem a classe não ao objeto.
 
 ## coesão e acoplamento
@@ -159,4 +164,31 @@ Uma classe coesa é uma classe que, possui uma única responsabilidade e seus m�
 Um alto nível de acomplamento indica que as classes estão interconectadas ou dependentes umas das outras, o que pode tornar o código mais difícil de entender e modificar.
 
 Uma boa prática de programação é maximizar a coesão e minizar o acoplamento.
+
+## Regras básicas para implementação de classes simples em java
+
+Todos os campos de uma classe devem ser _private_ para ficarem ocultos a o programador dessa classe. Os métodos acessíveis devem ser declarados como _public_.
+
+Omitir o modificador de acesso do não é muito problemático método será considerado da categoria ***package***, mas caso agrupemos classes desenvolvidas, pode ocorrer problemas de acesso.
+
+## Construtores
+
+Construtores devem ter o mesmo nome da sua classe.
+Não precisa declarar tipo, pois estes nem retornam valores.
+
+## Sobrecarga de métodos
+
+Métodos possuem uma coisa chamada ***assinatura**, está é composta pelo seu nome e os tipos de argumentos que ela recebe, independente dos nomes de váriaveis usados na declaração do métodos.
+
+O tipo do retorno **não é** considerado parte da _assinatura_, ou seja não podemos ter um método com o mesmo nome, tipo de argumentos, mas um retorno diferente.
+
+EX:
+```java
+public pessoa(){} //construtor vazio
+public pessoa(String nome, String CPF){
+    super();
+    CPF = CPF;
+    Nome = nome;
+}
+```
 
