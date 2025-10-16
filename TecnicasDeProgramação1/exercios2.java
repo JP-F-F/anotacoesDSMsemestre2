@@ -79,3 +79,77 @@ class Atividade8Al{
     }
 }
 */
+
+/*
+class atividadeHeranca1{
+    class Funcionario{
+        private String nome, CPF; 
+        private double salario;
+
+        public String getNome(){
+            return this.nome;
+        }
+
+        public String getCPF(){
+            return this.CPF;
+        }
+
+        public double getSalario(){
+            return this.salario;
+        }
+
+        public void setNome(String nm){
+            this.nome = nm;
+        }
+
+        public void setCPF(String cpf){
+            this.CPF = cpf;
+        }
+
+        public void setSalario(double sal){
+            this.salario = sal;
+        }
+    }
+
+    class Gerente extends Funcionario{
+        private int Senha;
+
+        public int getSenha(){
+            return this.Senha;
+        }
+
+        public void setSenha(int senha){
+            this.Senha = senha;
+        }
+
+        public boolean autenticaSenha(){
+            if(getSenha() % 2 != 0){
+                System.out.println("Senha inválida");
+                return false;
+            }else{
+                System.out.println("Olá" + getNome() + "Bem-vindo");
+                return true;
+            }
+        }
+    }
+}
+*/
+
+class AtividadeHeranca2{
+    class Veiculo{
+        private String Placa;
+        private int Ano;
+
+        public Veiculo(){}
+
+        public Veiculo(String placa, int ano){
+          this.Placa = placa;
+          this.Ano = ano;
+        }
+
+        public String getPlaca(){
+            return Placa;
+        }
+        
+    }
+}
