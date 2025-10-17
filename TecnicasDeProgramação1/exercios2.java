@@ -151,5 +151,62 @@ class AtividadeHeranca2{
             return Placa;
         }
         
+        public int getAno(){
+            return Ano;
+        }
+
+        public void setPlaca(String placa){
+            this.Placa = placa;
+        }
+
+        public void setAno(int ano){
+            this.Ano = ano;
+        }
+
+    }
+
+    class Caminhao extends Veiculo{
+        private int Eixos;
+
+        public Caminhao(String placa, int ano, int eixos){
+            this.setAno(ano);
+            this.setPlaca(placa);
+            this.Eixos = eixos;
+        }
+
+        public int getEixos(){
+            return this.Eixos;
+        }
+
+        public void setEixos(int eixos){
+            this.Eixos = eixos;
+        }
+
+        public void exibirDados(){
+            System.out.println("Ano:" + getAno() + "Placa:" + getPlaca() + "Eixos:" + getEixos());
+        }
+
+    }
+
+    class Onibus extends Veiculo{
+        private int Assentos;
+
+        public int getAssentos(){
+            return this.Assentos;
+        }
+
+        public void setAssentos(int Assentos){
+            this.Assentos = Assentos;
+        }
+
+        public Onibus(String placa, int ano, int assentos){
+            setAno(ano);
+            setPlaca(placa);
+            this.Assentos = assentos;
+        }
+
+        public void exibirDados(){
+            System.out.println("Ano:" + getAno() + "Placa:" + getPlaca() + "Eixos:" + getAssentos());
+        }
     }
 }
