@@ -77,3 +77,55 @@ Existem 3 tipos de evento:
     * Piscinas(pool) - Representam um autor em determinado processo;
     * Pistas(lane) - Representam a subdivisão da piscina, são usadas para organizar e categorizar participantes de um processo;
     * Marcos(milestones) - Servem pra mostrar as etapas dum processo indicando a mudança de uma fase; 
+
+
+### AS IS e TO-BE
+
+Geralmente o estudo de processo de negócios começa com uma fase de descrição/fase de designer, para capturar o AS-IS/processos de negócios atuais.
+
+Atividades dessa fase:
+* O modelo de processo de negócio visita a organização-alvo;
+* Lê a documentação existente;
+* conduz entrevistas;
+* estuda e representa as informações coletadas em processo modelo;
+
+Já na fase de redesign é criado um modelo de processo **TO-BE** para visualizar como o processo ficará após as alterações, usando os resultados da análise e/ou nos objetivos pré-definidos como base, para adequar-se a uma nova **estratégia corporativa** ou a um **novo sistema de TI**.
+
+Os procedimentos iniciais da BPM procuram _conhecer as estratégias corporativas_ para moldar os processos visando os **objetivos da empresa**.
+
+## Tutorial do software bizagi??
+
+### Intro - visão por processos
+
+Para visualizar melhor as atividades e pessoas envolvidas em um processo ou rotina, podemos usar esquemas gráficos. qual a ordem e relação entre as atividades e setores?
+
+Para que o processo fique bem organizado e auto-explicativo precisamos deixar as atividades em ordem de realização e tenham **descrições breves e claras**.
+
+Gostaria de enfatizar aqui que é de **suma importância ler a documentação** da notação do BPMN pois existem **diversos tipos de eventos e simbolos**.
+por exemplo temos além dos eventos gerais, os eventos de início condicional, evento intermediário condicional, evento paralelo de início e etc.
+
+### Principais objetos no BPMN
+
+***Eventos de compensação***
+* Evento intermediário de compensação - permite lidar com compensação (????);
+* Evento final de compensação - indica que o fluxo foi finalizado e é necessária uma compensação(????);
+
+**Evento final de erro** - permite o envio de uma exceção de erro quando o fluxo chega ao fim;
+**Evento de fim de cancelamento** - permite o cancelamento excepcional quando um fluxo chega ao fim(é usado apenas em subprocessos);
+**Evento de término** - O processo e todas as suas atividades terminam, independentemente de haver um ou mais fluxos pendentes.
+
+***Atividades*** - tarefa é uma ativiade simples usada para trabalhos simples que não podem ser dividos em mais detalhes.
+**Alguns tipos de tarefas**:
+* Serviço - a tarefa é realizada pelo sistema; 
+* tarefa recebida;
+* envio de tarefas;
+* tarefa manual;
+
+**Subprocessos** são atiividades compostas cujos detalhes são definidos em novo fluxo de atividades.
+
+***Gateways*** são elementos para controlar convergências e divergências do fluxo;
+
+|Tipo Gateway | Divergência | Convergência |
+|-------------|-------------|--------------|
+|Gateway Inclusivo| Quando há várias rotas disponíveis e elas podem acontecer ao mesmo tempo, mas não necessariamente ocorre todas| Sincroniza em um caminho várias rotas de divergência disponibilizadas por uma gateway inclusivo de divergência|
+|Gateway Paralelo| para pontos no fluxo onde existem atividades que podem acontecer ao mesmo tempo ou em qualquer ordem| Junta várias rotas executadas em paralelo em somente uma|
