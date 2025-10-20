@@ -129,3 +129,19 @@ por exemplo temos além dos eventos gerais, os eventos de início condicional, e
 |-------------|-------------|--------------|
 |Gateway Inclusivo| Quando há várias rotas disponíveis e elas podem acontecer ao mesmo tempo, mas não necessariamente ocorre todas| Sincroniza em um caminho várias rotas de divergência disponibilizadas por uma gateway inclusivo de divergência|
 |Gateway Paralelo| para pontos no fluxo onde existem atividades que podem acontecer ao mesmo tempo ou em qualquer ordem| Junta várias rotas executadas em paralelo em somente uma|
+|Gateway Exclusivo baseado em dados| apenas uma rota pode ser tomada entre as disponíveis, essa decisão é tomada após uma avaliação condicional| Permite que caminhos diferentes se transformem em apenas um caminho |
+|Gateway Exclusivo baseado em eventos| Divide rotas que são tomadas paralelamente, após a ocorrência de uma das rotas, apenas um caminho é tomado e os outros se tornam inativos|
+|Gateway Complexo| usado quando há necessidade de controlar quantas rotas concluidas são necessárias para passar á próxima tarefa| pode ser usado quando há necessidade de se tomar uma decisão completa|
+
+***Indicativos de Fluxo***:
+* Sequência de fluxo: É representado por uma seta continua que indica o caminho seguido pelo processo.
+* Fluxo de Mensagem: É representada por uma seta descontinua que representa troca de mensagem entre dois processos.
+* Associação: Uma associação é usada para associar informações e artefatos com objetos de fluxo. É representado por uma linha pontilhada.
+
+***Artefatos***: 
+* Anotações: Caixa de texto usada para informação adicional sobre o processo.
+* Agrupamento: usado para agrupar atividades com o propósito de documentação e análise.
+* Objeto de dados: Fornece informações sobre quais documentos, dados e etc são usados/utilizados no processo.
+* Depósito de dados: Fornece um mecanismo para a atividade recuperar ou atualizar informações documentadas.
+
+## Modelos de Ciclo de vida de Software
