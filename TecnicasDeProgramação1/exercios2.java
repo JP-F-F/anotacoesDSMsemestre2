@@ -163,6 +163,14 @@ class AtividadeHeranca2{
             this.Ano = ano;
         }
 
+        public void SetAno(String ano){
+            this.Ano = Integer.parseInt(ano);
+        }
+
+        
+        public void exibirDados(){
+            System.out.println("Ano:" + getAno() + "Placa:" + getPlaca());
+        }
     }
 
     class Caminhao extends Veiculo{
