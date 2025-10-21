@@ -1,3 +1,5 @@
+# **Aqui está revisão dos materias aula 02 até a aula05
+
 # Revisando o arquivo aula_02_TP
 
 POO é um paradigma de programação.
@@ -139,12 +141,21 @@ Metodos só podem retornar ***Um valor ou uma coleção***
 ## Encapsulamento e modificadores de acesso
 
 É o mecanismo utilizado para disponibilizar/proteger métodos, evitando o acesso direto e indevido a uma instancia, seus atributos e etc.
+Evitando que um objeto interfira sobre os dados de outro objeto de forma indevida.
 
 Devemos aplicar o encapsulamento pensando no código que irá usar esses atributos e etc depois.
 
 Os **modificadores de acesso** estes controlam o acesso aos ***membros de uma classe***.
 Membros de uma classe = a própria classe, atributos, metodos, contrutores.
 Caso um atributo ou metodo não tenha nenhum modificador de acesso ele é definido como ***Friendly***, ficando somente vísivel para objetos de classes do mesmo pacote.
+
+O modificador ***Abstract*** Classes definidas como abstract não permite criar instâncias da classe, ou seja não é possível fazer objetos dessa classe, geralmente aplicamos esse modificador em classes que não se conhece qual será o comportamento por inteiro.
+
+O modificador ***Native*** define que um método foi escrito em uma linguagem nativa como C ou C++.
+
+O modificador ***Transient*** Este é aplicado apenas a váriaveis, quando declaramos uma váriavel com esse modificador, a váriavel não guarda como parte do estado de persistência do objeto, pois as vezes é necessário escrever dados **fora da JVM**, quando isso acontece nenhum dos mecanismos de segurança da linguagem é válido e se existe informações que não devem ser escritas nas váriaveis que contem esses dados devem ser declarados com transient para que esses não sejam escritos fora da JVM.
+
+O modificador ***Synchronized*** faz com que um método seja acessado por um thread de cada vez.
 
 O modificador ***final*** faz com que os métodos não possam redefinidos e as classes impossiveis de estender(herança).
 Atributos ***Final*** também podem ser declarados com ***static***.
