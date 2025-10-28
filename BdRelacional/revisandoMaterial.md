@@ -43,3 +43,49 @@ Caso queiramos alterar uma tabela ou coluna usamos o **ALTER TABLE ou ALTER COLU
 
 Caso queiramos colocar uma validação em uma coluna, podemos usar o **CHECK**, EX: sexo char(1)... **CHECK(sexo in('F','M'))**;
 
+# Revisando aula 2.2 comandos DML
+
+Usamos o comando ***INSERT*** para adicionar linhas em uma tabela.
+```sql
+INSERT INTO nomeTabela VALUES
+```
+podemos após o "into" especificar que colunas preencher e após o "values" uma lista de expressões e valores fixos, em ambos os casos colocamos entre parênteses as colunas ou expressões e etc.
+
+O comando ***UPDATE*** serve para alterar os dados das tabelas.
+```sql
+UPDATE <tabela> | <view> SET coluna [coluna] = {expressão} [WHERE <condicao>]
+``` 
+
+# Revisando aula 05 Transformação entre modelos
+
+## Composição de um banco de dados relacional
+
+Um banco de dados relacional é composto de **tabelas** e **relações**.
+**Tabelas** são um conjunto não ordenado de linhas(**tuplas**).
+As **linhas** são compostas por uma série de campos(valor de **atributo**).
+Cada **Campo** é identificadp por um nome de campo(**Nome de atributo**).
+O conjunto de campos homônimos de todas as linhas de uma tabela forma uma **coluna**.
+
+Observações sobre tabelas:
+
+* As linhas de uma tabela **Não têm ordenação** - a ordem de recuperação é arbitrária, a menos que uma ordenação seja especificada na instrução da consulta.
+* Não existem linhas duplicadas.
+* Não é possível referenciar linhas de uma tabela por posição.
+* Os valores de um campo de uma tabela são atômicos(indivísivel) e monovalorados(apenas um valor por campo).
+
+## Chaves Candidatas
+
+colunas ou conjunto de colunas de uma tabela que indentificam de forma única cada linha.
+O fato de todas as linhas de uma tabela serem distintas entre si garante a existência de ao menos uma chave candidata na tabela.
+EX: RA, CPF, RG
+
+Exige-se que seja mínima (quando todas as suas colunas forem efetivamente necessárias para garantir o requisito de unicidade de valores chave)
+Uma tabela sempre tem ao menos uma chave candidata e pode ter mais que uma.
+As chaves candidatas não tem classificação, todas possuem a mesma relevância na tabela.
+
+## Chaves primárias
+
+Quando vamos escolher uma chave candidata para se tornar uma chave primária, devemos considerar a existência de referências a esta chave primária em outras tabelas(chave estrangeira).
+Quando definimos uma chave primária estamos definindo uma restrição de integridade e não um caminho de acesso(índice).
+
+## Chave estrangeira
