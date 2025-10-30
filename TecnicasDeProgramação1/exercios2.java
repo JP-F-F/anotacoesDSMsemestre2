@@ -135,6 +135,7 @@ class atividadeHeranca1{
 }
 */
 
+/* 
 class AtividadeHeranca2{
     class Veiculo{
         private String Placa;
@@ -218,3 +219,153 @@ class AtividadeHeranca2{
         }
     }
 }
+*/
+/* 
+class Atividade12{
+    abstract class Forma{
+        private String Cor;
+
+        public String getCor(){
+            return this.Cor;
+        }
+
+        public void setCor(String cor){
+            this.Cor = cor;
+        }
+    }
+    class Triangulo extends Forma{
+        private double Base;
+        private double Altura;
+        
+        public double getBase(){
+            return this.Base;
+        }
+
+        public void setBase(Double base){
+            this.Base = base;
+        }
+
+        public double getAltura(){
+            return this.Altura;
+        }
+
+        public void setCor(Double altura){
+            this.Altura = altura;
+        }
+
+        public Triangulo(double base, double altura, String cor){
+            this.Base = base;
+            this.Altura = altura;
+            setCor(cor);
+        }
+
+        public double area(){
+            return this.Base * this.Altura / 2;
+        }
+
+        public String toString(){
+            return String.format("Triangulo:(Base=%d, Altura=%d, Cor=%s)", Base, Altura, getCor());
+        }
+    }
+
+    class Circulo extends Forma{
+        private double Raio;
+
+        public double getRaio(){
+            return this.Raio;
+        }
+
+        public void setRaio(Double raio){
+            this.Raio = raio;
+        }
+        
+        public Circulo(double raio, String cor){
+            this.Raio = raio;
+            setCor(cor);
+        }
+
+        public double area(){
+            return Math.PI * Raio * Raio;
+        }
+
+        public double getDiametro(){
+            return 2 * Raio;
+        }
+
+        public String toString(){
+            return String.format("Circulo:(Raio=%d, Cor=%s)", Raio, getCor());
+        }
+    }
+
+    class Retangulo extends Forma{
+        private double Lado1;
+        private double Lado2;
+
+        public Retangulo(double lado1, double lado2, String cor){
+            this.Lado1 = lado1;
+            this.Lado2 = lado2;
+            setCor(cor);
+        }
+        
+        public Retangulo(double lado1, String cor){
+            this.Lado1 = lado1;
+            setCor(cor);
+        }
+
+        public double getLado1(){
+            return this.Lado1;
+        }
+
+        public void setLado1(Double lado){
+            this.Lado1 = lado;
+        }
+
+        public double getLado2(){
+            return this.Lado2;
+        }
+
+        public void setLado2(Double lado){
+            this.Lado2 = lado;
+        }
+
+        public double area(){
+            return Lado1 * Lado2;
+        }
+
+        public String toString(){
+            return String.format("Retangulo:(Lado1=%d, Lado2=%d, Cor=%s)", Lado1, Lado2, getCor());
+        }
+    }
+
+    class Quadrado extends Retangulo{
+        public Quadrado(Double lado, String cor){
+            super(lado, cor);
+        }
+
+        public String toString(){
+            return String.format("Quadrado:(Lado=%d, Lado2=%d, Cor=%s)", getLado1(), getCor());
+        }
+    }
+
+    class Main{
+        public static void main(String[] args) {
+            Circulo circulo = new Circulo(30, "Vermelho");
+            Quadrado quadrado = new Quadrado(7.0, "Verde");
+            Retangulo retangulo = new Retangulo(10, 20, "Amarelo");
+            Triangulo triangulo = new Triangulo(5, 10, "Rose");
+            System.out.println("Metodos do Retangulo");
+            retangulo.area();
+            retangulo.toString();
+            System.out.println("Metodos do Circulo");
+            circulo.area();
+            circulo.getDiametro();
+            circulo.toString();
+            System.out.println("Metodos do Triangulo");
+            triangulo.area();
+            triangulo.toString();
+            System.out.println("Metodos do Quadrado");
+            quadrado.toString();
+        }
+    }
+}
+*/
