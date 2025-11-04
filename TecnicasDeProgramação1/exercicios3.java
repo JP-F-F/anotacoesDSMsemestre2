@@ -152,5 +152,95 @@ class Atividade13{
 }
 */
 
+/*
+class Atividade14{
+    public interface Notificavel{
+        public abstract void enviarMensagem(String mensagem);
+    }
 
+    class EmailNotificacao implements Notificavel{
+        private String Email;
 
+        public String getEmail(){
+            return this.Email;
+        }
+
+        public void setEmail(String email){
+            this.Email = email;
+        }
+
+        @Override
+        public void enviarMensagem(String mensagem){
+            System.out.println("Mensagem: " + mensagem);
+            System.out.println("Enviada para o email: " + this.Email);
+        }
+    }
+
+    class SMSNotificacao implements Notificavel{
+        private String SMS;
+      
+        public String getSMS(){
+            return this.SMS;
+        }
+
+        public void setSMS(String sms){
+            this.SMS = sms;
+        }
+
+        @Override
+        public void enviarMensagem(String mensagem){
+            System.out.println("Mensagem: " + mensagem);
+            System.out.println("Enviada para o telefone: " + this.SMS);
+        }
+    }
+
+    public interface FormaGeometrica{
+        public abstract double calcularArea();
+        public abstract double calcularPerimetro();
+    }
+
+    class circulo implements FormaGeometrica{
+
+        @Override 
+        public double calcularArea(){
+            return Math.pow(Math.PI, 2);
+        }
+
+        @Override
+        public double calcularPerimetro(){
+            return 2 * Math.PI;
+        }
+    }
+
+    class Retangulo implements FormaGeometrica{
+        private double Altura;
+        private double Base;
+
+        public double getAltura(){
+            return this.Altura;
+        }
+
+        public void setAltura(double altura){
+            this.Altura = altura;
+        }
+
+        public double getBase(){
+            return this.Base;
+        }
+
+        public void setBase(double base){
+            this.Base = base;
+        }
+
+        @Override 
+        public double calcularArea(){
+            return this.Base * this.Altura;
+        }
+
+        @Override
+        public double calcularPerimetro(){
+            return 2 * (this.Base + this.Altura);
+        }
+    }
+}
+*/
