@@ -144,4 +144,33 @@ por exemplo temos além dos eventos gerais, os eventos de início condicional, e
 * Objeto de dados: Fornece informações sobre quais documentos, dados e etc são usados/utilizados no processo.
 * Depósito de dados: Fornece um mecanismo para a atividade recuperar ou atualizar informações documentadas.
 
-## Modelos de Ciclo de vida de Software
+## Modelos de Ciclo de vida de Software(cascata, Espiral e prototipagem)
+
+Os softwares modernos são caracterizados por **contínuas modoficações, prazos apertados** e um **foco na satisfação do cliente usuário**.
+Um fundamento de todos os modelos de processo é **Entender o problema** antes de desenvolver a solução.
+
+Essa disponibilização envolve três ações: Entrega, suporte e feedback.
+
+A Engenharia de Software estabele cinco atividades metodológicas: _comunicação, planejamento, modelagem, construção e entrega_.
+
+### Modelos de processos prescritivos
+
+Esses modelos definem um **conjunto prescrito de elementos**(atividades metodológicas, tarefas, artefatos e etc) de processo e um fluxo de trabalho de processo prevísivel.
+
+Modelos de processo de desenvolvimento de software:
+* Modelo em Cascata;
+* Modelo em Espiral;
+* Modelo de Prototipagem;
+
+O modelo **cascata**, chamado tambem de modelo sequencial linear, começa com a comunicação(especificação de requisitos) do cliente, avançando pelas fases de planejamento, modelagem, construção e entrega, e terminando com a manutenção continua do software desenvolvido.
+
+No modelo de **Prototipação**, os usuários podem ter uma ideia prévia do sistema final, conforme os desenvolvedores desenvolvem o programa.
+**Problemática:** O engenheiro de software pode querer fazer concessões na implementação para que o protótipo entre em operação logo. A também o problema que os envolvidos enxergam o que parece ser uma versão operacional do software.
+
+### Comparação entre modelos
+
+**Prós do modelo cascata**: Fácil de entender e planejar, bom para projetos pequenos e bem compreendidos, analise e testes simples e diretos.
+**Contras**: Não se adapta bem a mudanças, os testes ocorrem nas fases finais do processo, o cliente só aprova no final.
+
+**Prós da Prototipação**: O impacto das alterações aos requisitos é reduzido, o cliente se envolve bastante desde o início, funciona bem para projetos pequenos, menor probabilidade de rejeição do produto.
+**Contras**: O envolvimento do cliente pode causar atrasos, desperdicio de trabalho em protótipos descartáveis, dificil planejar e gerenciar

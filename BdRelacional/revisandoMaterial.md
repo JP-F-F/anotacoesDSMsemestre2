@@ -73,19 +73,61 @@ Observações sobre tabelas:
 * Não é possível referenciar linhas de uma tabela por posição.
 * Os valores de um campo de uma tabela são atômicos(indivísivel) e monovalorados(apenas um valor por campo).
 
-## Chaves Candidatas
+## Mapeamento do conceitual pro relacional
 
-colunas ou conjunto de colunas de uma tabela que indentificam de forma única cada linha.
-O fato de todas as linhas de uma tabela serem distintas entre si garante a existência de ao menos uma chave candidata na tabela.
-EX: RA, CPF, RG
+Um modelo construído usando o Modelo entidade-relacionamento pode seer mapeado para um modelo lógico relacional, a equivalência seria algo como:
+|Modelo Conceitual | Modelo Relacional |
+|------------------|-------------------|
+|Entidade | tabela |
+|Atributo | Coluna |
+|Ocorrência| Linha|
 
-Exige-se que seja mínima (quando todas as suas colunas forem efetivamente necessárias para garantir o requisito de unicidade de valores chave)
-Uma tabela sempre tem ao menos uma chave candidata e pode ter mais que uma.
-As chaves candidatas não tem classificação, todas possuem a mesma relevância na tabela.
+## Mapeando Entidades
 
-## Chaves primárias
+* Para cada entidade se cria uma relação-tabela;
+* Para cada atributo simples se inclui uma coluna na tabela;
+* Caso o atributo seja composto incluir só os atributos simples que o compõe(Endereço por exemplo);
 
-Quando vamos escolher uma chave candidata para se tornar uma chave primária, devemos considerar a existência de referências a esta chave primária em outras tabelas(chave estrangeira).
-Quando definimos uma chave primária estamos definindo uma restrição de integridade e não um caminho de acesso(índice).
+## Mapeando atributos multivalorados
 
-## Chave estrangeira
+* Para cada atributo desses, deve ser criada uma tabela formada pela chave primária da Tabela/Entidade e pelo atributo;
+* A chave primária da nova tabela será o par de atributos;
+
+# Aula 06 views
+
+## Processamento do select
+
+A ordem de processamento de uma consulta seria:
+|Ordem Visual | Ordem De Processamento |
+|:-------------|------------------------:|
+|Select | From |
+|From  | Where |
+|Where | Group By|
+|Group By | Having|
+|Having | Select |
+| Order by | Order By |
+
+## VIEW
+
+Views em sql são tabelas virtuais baseadas no **resultado de um SELECT**. O comando select que compõe a view pode usar _joins_ para relacionar várias tabelas.
+
+Algumas utilidades das VIEWS seriam:
+* Simplificar e personalizar a visualização dos usuários sobre o banco;
+* Mecanismo de segurança, pois permite que os usuários acessem os dados atráves da view, sem conceder permissão direta á tabela;
+* Pode oferecer também uma interface compatível com versões anteriores para emular uma tabela que foi alterada.
+
+É possível usar operações de **insert, Update e Delete**, desde que não envolva mais de uma tabela base na operação.
+
+```sql
+-- Criando uma VIEW
+CREATE VIEW v_empregados AS
+SELECT NomeEmpr, DtNascimento, CodDepto, NomeDepto FROM Empregado
+INNER JOIN Departamento Departamento ON (Departamento.CodDepto = Empregado.CodDepto);
+
+-- Alterando a VIEW
+ALTER VIEW v_empregados AS 
+SELECT e.salario, e.comissao FROM Empregado e INNER JOIN Departamento d ON (d.idDpeto = e.idDepto);
+
+-- Deletando a VIEW
+DROP VIEW v_empregados;
+```
