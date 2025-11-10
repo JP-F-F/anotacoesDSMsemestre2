@@ -30,4 +30,16 @@ CREATE TABLE IF NOT EXISTS Docente(
     titulacao VARCHAR(20) NOT NULL,
     regime_trabalho VARCHAR(20),
     sexo CHAR(1) NOT NULL,
-)
+    CONSTRAINT fk_Docente PRIMARY KEY (id_docente),
+    CONSTRAINT fk_IES FOREIGN KEY (cod_ies) REFERENCES IES (cod_ies)
+);
+
+CREATE TABLE IF NOT EXISTS Curso(
+    cod_curso INT IDENTITY(1,1) NOT NULL,
+    id_campus INT,
+    nome_curso VARCHAR(25) NOT NULL,
+    grau_academico VARCHAR(20) NOT NULL,
+    modalidade VARCHAR(15) NOT NULL,
+    carga_horaria_total FLOAT NOT NULL,
+    numero_vagas INT
+);
