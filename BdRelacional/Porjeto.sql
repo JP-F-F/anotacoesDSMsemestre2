@@ -42,4 +42,35 @@ CREATE TABLE IF NOT EXISTS Curso(
     modalidade VARCHAR(15) NOT NULL,
     carga_horaria_total FLOAT NOT NULL,
     numero_vagas INT
+    CONSTRAINT fk_Curso PRIMARY KEY (cod_curso),
+    CONSTRAINT fk_Campus FOREIGN KEY (id_campus) REFERENCES Campus (id_campus)
 );
+
+CREATE TABLE IF NOT EXISTS Aluno(
+    id_aluno INT IDENTITY(1,1) NOT NULL,
+    cod_curso INT,
+    nome_aluno VARCHAR(30) NOT NULL,
+    ano_ingresso DATE NOT NULL,
+    sexo CHAR(1) NOT NULL,
+    cor_raca VARCHAR(10) NOT NULL,
+    dt_nascimento DATE NOT NULL,
+    situacao VARCHAR(20),
+);
+
+CREATE TABLE IF NOT EXISTS Matricula(
+    id_matricula INT IDENTITY(1,1) NOT NULL,
+    id_aluno INT,
+    cod_disciplina INT,
+    ano DATE NOT NULL,
+    semestre INT NOT NULL,
+    nota_final FLOAT NOT NULL,
+    frequencia INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS Disciplina(
+    cod_disciplina INT IDENTITY(1,1) NOT NULL,
+    cod_curso INT,
+    nome_disciplina VARCHAR(20),
+    carga_horaria DATETIME,
+    periodo VARCHAR(15),
+)
